@@ -1,0 +1,21 @@
+<h1>Soundcloud API test</h1>
+
+<a href="search.html">search</a>
+
+<a href="duration.html">duration</a>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+
+<script>
+	SC.initialize({
+	    client_id: 'de0fe0a8b7a7899f6aaeb4a9536fbf52'
+	});
+
+	SC.get('/tracks').then(function(tracks){
+		console.log('success!!');
+		console.log(tracks);
+		for (i=0; i<=tracks.length; i++){
+		    var imgsrc = tracks[i].artwork_url;
+		    document.writeln("<img src='"+imgsrc+"'>");
+		}
+	});
+</script>
