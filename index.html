@@ -15,7 +15,9 @@
 		console.log(tracks);
 		for (i=0; i<=tracks.length; i++){
 		    var imgsrc = tracks[i].artwork_url;
-		    document.writeln("<img src='"+imgsrc+"'>");
+		    if (imgsrc !=null){
+			    document.writeln("<img src='"+imgsrc+"'>");
+			}
 		}
 	});
 </script>
