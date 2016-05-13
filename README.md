@@ -1,3 +1,4 @@
 # sctest1
 
-Tests with the SOundcloud API
+Tests with the Soundcloud API
+
